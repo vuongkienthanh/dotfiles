@@ -29,6 +29,7 @@ cd picom
 git submodule update --init --recursive
 meson --buildtype=release . build
 ninja -C build install
+git config --global credential.helper 'store --file ~/.my-credentials'
 ```
 ### JetBrains Mono v2.242 nerd fonts: `~/.local/share/fonts/`
 ### xfce4
