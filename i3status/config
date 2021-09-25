@@ -1,0 +1,16 @@
+general {
+        output_format = "i3bar"
+        interval = 5
+}
+
+order += "tztime local"
+order += "volume master"
+
+tztime local {
+        format = "%A %Y-%m-%d %H:%M"
+}
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "pulse"
+}
